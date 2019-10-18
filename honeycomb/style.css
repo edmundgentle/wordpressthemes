@@ -1,0 +1,222 @@
+/*
+Theme Name: Surfer
+Description: Designed by Edmund Gentle
+Author: Edmund Gentle
+Author URI: http://www.edmundgentle.com/
+Version: 1.1
+Tags: 
+*/
+a {
+	color:inherit;
+	text-decoration:none;
+}
+body, td, th {
+	font-family:Signika, Arial, sans-serif;
+	font-weight:300;
+	font-size:12px;
+}
+body {
+	margin:0;
+	background-color:#DDD;
+}
+.header {
+	height:187px;
+	position:relative;
+	background-image:url(images/hbg.png);
+	background-repeat:repeat-x;
+	border-bottom:1px solid #666;
+}
+.header h1 {
+	margin:0;
+	font-size:44px;
+	font-weight:600;
+	position:absolute;
+	left:43px;
+	top:41px;
+	text-shadow:1px 1px 0 rgba(255,255,255,0.65);
+}
+.header a:hover {
+	color:#705203;
+}
+.header h3 {
+	margin:0;
+	font-size:17px;
+	font-weight:600;
+	position:absolute;
+	left:43px;
+	top:101px;
+	text-shadow:1px 1px 0 rgba(255,255,255,0.65);
+}
+.header .main_menu {
+	margin:0;
+	margin-left:auto;
+	margin-right:auto;
+	width:900px;
+	text-align:right;
+	list-style:none;
+	font-size: 0;
+	padding-top:43px;
+}
+.header .main_menu li {
+	display:inline;
+	margin:0;
+	position:relative;
+}
+.header .main_menu li a {
+	display:inline-block;
+	padding:12px 15px;
+	background-color:rgba(255,255,255,0.5);
+	margin:0;
+	font-size:14px;
+	color:#000;
+	text-decoration:none;
+	font-weight:600;
+	border-left:1px solid rgba(255,255,255,0.5);
+	border-right:1px solid rgba(0,0,0,0.3);
+}
+.header .main_menu li:first-child a {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border-left:0;
+}
+.header .main_menu li:last-child a {
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-right:0;
+}
+.header .main_menu li.current-menu-parent a, .header .main_menu li:hover a {
+	background-color:#FFF;
+}
+.header .main_menu li:hover ul {
+	display:block;
+}
+.header .main_menu li ul {
+	display:none;
+	position:absolute;
+	background-color:#FFF;
+	text-align:left;
+	margin:0;
+	padding:0;
+	z-index:999;
+	/*border-top-right-radius:3px;*/
+	border-bottom-right-radius:3px;
+	border-bottom-left-radius:3px;
+	overflow:hidden;
+	box-shadow:1px 1px 1px rgba(0,0,0,0.3);
+}
+.header .main_menu li ul li a, .header .main_menu li ul li:first-child a, .header .main_menu li ul li:last-child a {
+	display:block;
+	border-radius:0;
+	border:0;
+	background:transparent !important;
+	padding:6px 10px;
+}
+.header .main_menu li ul li a:hover {
+	color:#f9be24;
+}
+.main {
+	border-top:1px solid #fff;
+	position:relative;
+}
+.main .content {
+	margin-left:auto;
+	margin-right:auto;
+	width:900px;
+	margin-top:-36px;
+	background-color:#FFF;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	border:1px solid rgba(0,0,0,0.2);
+	border-bottom:0;
+}
+.main .content a {
+	text-decoration:underline;
+	color:#f9be24;
+}
+.main .content a:hover {
+	color:#f4b307;
+}
+.main .content h2 {
+	font-size:40px;
+	font-weight:300;
+	text-align:center;
+	margin:0;
+}
+.main .content .padding {
+	padding:10px;
+}
+.main .content .padding .lcontent {
+	padding-right:440px;
+}
+.main .content .padding .lcontent .alignright {
+	margin-right:-440px;
+	max-width:430px;
+	float:right;
+}
+.footer {
+	background-color:#222;
+	color:#ccc;
+	border-top:1px solid #222;
+	box-shadow:inset 0 1px 0 rgba(255,255,255,.1);
+}
+.footer-main {
+	margin:0;
+	margin-left:auto;
+	margin-right:auto;
+	width:900px;
+}
+.footer-main .f1 {
+	width:205px;
+	padding:10px;
+	float:left;
+	list-style:none;
+}
+.footer-main ul {
+	color:#FFF;
+}
+.footer-main ul li {
+	color:#ccc;
+}
+.f1.social {
+	font-size:0px;
+	text-align:right;
+}
+.f1.social li {
+	display:inline;
+}
+.f1.social li a {
+	display:inline-block;
+	width:32px;
+	height:32px;
+	background-repeat:no-repeat;
+	text-indent:-500px;
+	overflow:hidden;
+	border-radius:4px;
+}
+.f1.social li a:hover {
+	background-color:#f9be24;
+}
+.f1.social li.fb a {
+	background-image:url(images/fb.png);
+}
+.f1.social li.tw a {
+	background-image:url(images/tw.png);
+}
+.f1.social li.li a {
+	background-image:url(images/li.png);
+}
+.f1.social li.gp a {
+	background-image:url(images/gp.png);
+}
+.f1.social li.yt a {
+	background-image:url(images/yt.png);
+}
+.f1.social li.fl a {
+	background-image:url(images/fl.png);
+}
+.clear {
+	clear:both;
+}
+.footer a:hover {
+	color:#f9be24;
+}

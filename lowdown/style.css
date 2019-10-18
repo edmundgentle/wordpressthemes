@@ -1,0 +1,196 @@
+/*
+Theme Name: Lowdown
+Description: Designed by Edmund Gentle
+Author: Edmund Gentle
+Author URI: http://www.edmundgentle.com/
+Version: 1.0
+Tags: 
+*/
+
+a {
+	color:inherit;
+}
+
+body, td, th {
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:13px;
+	line-height:140%;
+}
+body {
+	background-color:#2D9ACB;
+	background-image:url(images/bg.png);
+	background-position:top center;
+	background-attachment:fixed;
+}
+.header h1 a {
+	background-image:url(images/logo.png);
+	display:block;
+	width:400px;
+	height:105px;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:0;
+}
+.container {
+	width:800px;
+	background-color:#fff;
+	margin-left:auto;
+	margin-right:auto;
+}
+.main_menu {
+	list-style:none;
+	margin:0;
+	padding:0;
+	border-bottom:3px solid #2D9ACB;
+	font-size:0;
+	text-align:center;
+}
+.main_menu li {
+	display:inline;
+}
+.main_menu li a {
+	font-size:20px;
+	display:inline-block;
+	padding:10px 20px;
+	text-decoration:none;
+	color:#2D9ACB;
+	font-style:italic;
+}
+.main_menu li a:hover {
+	color:#247aa1;
+}
+.m2col {
+	font-size:0;
+}
+.m2col .col1, .m2col .col2 {
+	display:inline-block;
+	font-size:13px;
+	padding:10px;
+	vertical-align:top;
+}
+.m2col .col1 {
+	width:470px;
+	padding-right:0;
+}
+.m2col .col2 {
+	width:300px;
+}
+h2 {
+	font-size:25px;
+	font-style:italic;
+	color:#2C99CB;
+	font-weight:bold;
+}
+.sidebarwidgets {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.sidebarwidgets li.widget {
+	margin-bottom:10px;
+}
+.sidebarwidgets li.widget h2.widgettitle {
+	border-bottom:2px solid #2D9ACB;
+	padding-bottom:5px;
+}
+.social_box {
+	display:block;
+	height:60px;
+	background-position:10px;
+	background-repeat:no-repeat;
+	padding-left:50px;
+	line-height:60px;
+	font-size:20px;
+	color:#fff;
+	text-decoration:none;
+	font-style:italic;
+	text-align:center;
+}
+.social_box.twitter {
+	background-color:#659FCB;
+	background-image:url(images/twlogo.png);
+}
+.social_box.youtube {
+	background-color:#D8271D;
+	background-image:url(images/ytlogo.png);
+}
+.social_box.twitter:hover {
+	background-color:#4087bd;
+}
+.social_box.youtube:hover {
+	background-color:#ab1f17;
+}
+.footer {
+	border-top:3px solid #2D9ACB;
+	padding:10px;
+	font-size:11px;
+}
+
+ul.pagination {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+li.info {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+.wp-caption p.wp-caption-text {
+    font-size: 12px;
+	font-weight:300;
+	font-style:italic;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}

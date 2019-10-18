@@ -1,0 +1,207 @@
+/*
+Theme Name: Pursued By A Bear
+Description: Designed by Edmund Gentle
+Author: Edmund Gentle
+Author URI: http://www.edmundgentle.com/
+Version: 1.0
+Tags: 
+*/
+
+@font-face {
+    font-family: 'another_shabbyregular';
+    src: url('Anothershabby-webfont.eot');
+    src: url('Anothershabby-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Anothershabby-webfont.woff2') format('woff2'),
+         url('Anothershabby-webfont.woff') format('woff'),
+         url('Anothershabby-webfont.ttf') format('truetype'),
+         url('Anothershabby-webfont.svg#another_shabbyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	margin:0;
+	padding:0;
+	background-repeat:repeat-x;
+	background-position:center bottom;
+	background-image:url(images/bottom.png);
+}
+a {
+	color:inherit;
+	text-decoration:underline;
+}
+.left {
+	background-repeat:repeat-y;
+	background-position:top left;
+	background-image:url(images/left.png);
+}
+.right {
+	background-repeat:repeat-y;
+	background-position:top right;
+	background-image:url(images/right.png);
+	padding-bottom:80px;
+}
+.container {
+	width:900px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.header {
+	text-align:center;
+	margin-top:0px;
+	padding-top:355px;
+	padding-bottom:20px;
+	background-repeat:repeat-x;
+	background-position:center top;
+	background-image:url(images/header.png);
+}
+.header h1 {
+	display:none;
+}
+.main_menu {
+	background-color:#000;
+	list-style:none;
+	margin:0;
+	padding:0;
+	text-align:center;
+	margin-bottom:20px;
+	font-size:0;
+}
+.main_menu li {
+	display:inline;
+}
+.main_menu li a {
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 15px;
+	font-family:'another_shabbyregular', Arial, sans-serif;
+	font-size:18px;
+}
+.main_menu li a:hover {
+	background-color:#fff;
+	color:#000;
+}
+ul.sidebarwidgets {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.textblock, .sidebarwidgets li.widget {
+	background-color:rgba(255,255,255,0.8);
+	margin:0;
+	padding:10px;
+	margin-bottom:20px;
+}
+.textblock h2, .sidebarwidgets li.widget h2 {
+	font-family:'another_shabbyregular', Arial, sans-serif;
+	font-size:20px;
+}
+.textblock p, , .sidebarwidgets li.widget p {
+	line-height:140%;
+}
+.m2col {
+	font-size:0;
+}
+.col1, .col2 {
+	display:inline-block;
+	vertical-align:top;
+	font-size:13px;
+	padding:0px;
+	margin:0;
+}
+.col1 {
+	width:585px;
+}
+.col2 {
+	width:295px;
+	padding-left:20px;
+}
+.footer {
+	background-color:rgba(255,255,255,0.8);
+	font-family:'another_shabbyregular';
+	font-size:14px;
+	padding:10px;
+}
+@media screen and (max-width: 900px) {
+	.container {
+		width:100%;
+	}
+	.col1, .col2 {
+		display:block;
+		width:100%;
+		padding:0;
+	}
+	.main_menu li a {
+		font-size:25px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.header {
+		background-size:158px 143px;
+		padding-top:160px;
+	}
+	.header h1 {
+		font-size:50px;
+	}
+}
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+.wp-caption p.wp-caption-text {
+    font-size: 12px;
+	font-weight:300;
+	font-style:italic;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}

@@ -1,0 +1,259 @@
+/*
+Theme Name: Nicole Mackey
+Description: Designed by Edmund Gentle
+Author: Edmund Gentle
+Author URI: http://www.edmundgentle.com/
+Version: 1.0
+Tags: 
+*/
+* {
+	outline:0;
+}
+a {
+	color:inherit;
+}
+.container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+	background-image:url(images/bg.png);
+	background-position:center top;
+	color:#fff;
+	padding-top:190px;
+}
+
+.header {
+  border-bottom: 20px solid #9241A5;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #842699;
+  padding: 0;
+  margin: 0;
+  height: 190px;
+  z-index:999;
+}
+
+.header h1 {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 100px;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-image: url(images/logo.png);
+  background-size: 225px;
+  font-size: 0;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+    h1 {
+        background-image:url(images/logo@2x.png);
+    }
+}
+
+ul.mainmenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.mainmenu li {
+    display: inline;
+}
+
+.mainmenu a {
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 28px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.pagebox {
+    margin-top: 5px;
+    padding: 25px;
+}
+
+.pagebox_inner {
+	background-color:#9241A5;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:1px;
+	padding-bottom:1px;
+	margin-top:40px;
+}
+
+.pagebox:last-child {
+	padding-bottom: 100px;
+}
+
+.pagebox h2 {
+    font-size: 28px;
+    padding: 0;
+    margin: 0;
+}
+
+.pagebox p {
+    line-height: 140%;
+}
+
+ul.postlist {
+    list-style: none;
+    padding: 10px;
+    margin: -10px;
+	margin-top:0;
+	margin-bottom:0;
+    font-size: 0;
+}
+
+li.postbox {
+    display:inline;
+}
+
+.postbox a {
+	text-decoration:none;
+	display: inline-block;
+    width: 340px;
+    vertical-align: top;
+    padding: 10px;
+    font-size: 14px;
+	transition: background .25s ease-in-out;
+	-moz-transition: background .25s ease-in-out;
+	-webkit-transition: background .25s ease-in-out;
+	height: 308px;
+	overflow: hidden;
+	margin-bottom:10px;
+}
+.postbox:nth-child(odd) a {
+	margin-right:10px;
+}
+.postbox a:hover {
+	background-color:#842699;
+}
+
+.postbox .image_holder {
+	height: 175px;
+	background-color:#842699;
+	display:block;
+	margin-left:-10px;
+	margin-right:-10px;
+	margin-top:-10px;
+}
+
+.postbox .image_holder img {
+    width: 360px;
+    height: 175px;
+	opacity:0.6;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+
+.postbox a:hover .image_holder img {
+	opacity:1;
+}
+
+.header_image {
+	margin-left:-10px;
+	margin-right:-10px;
+	margin-top:0;
+	background-color:#842699;
+	text-align:center;
+}
+.header_image img {
+	width:750px;
+	height:auto;
+}
+
+
+img.alignnone.size-medium {
+    margin: 5px;
+    height: 200px;
+    width: 230px;
+}
+
+a img.alignnone.size-medium {
+    opacity: 0.6;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+a:hover img.alignnone.size-medium {
+    opacity:1;
+}
+
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+.wp-caption p.wp-caption-text {
+    font-size: 12px;
+	font-weight:300;
+	font-style:italic;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}

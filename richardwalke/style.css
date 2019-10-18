@@ -1,0 +1,258 @@
+/*
+Theme Name: Richard Walke
+Description: Designed by Edmund Gentle
+Author: Edmund Gentle
+Author URI: http://www.edmundgentle.com/
+Version: 1.0
+Tags: 
+*/
+* {
+	outline:0;
+}
+body {
+	margin:0;
+	padding:0;
+}
+body, td, th {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color:#333;
+}
+a {
+	color:#BF1411;
+}
+#header {
+	border-bottom:1px solid #ccc;
+	padding:20px;
+}
+#header h1 {
+	text-align:center;
+	width:71px;
+	display:inline-block;
+	vertical-align:middle;
+	margin:0;
+}
+#header h1 a {
+	font-size:0;
+	width:71px;
+	height:71px;
+	background-image:url(images/logo.png);
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-devicepixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
+  .icon{
+    background-image: url(images/logo@2x.png);
+    background-size: 71px 71px;
+  }
+}
+#header .menu {
+	list-style:none;
+	margin:0;
+	padding:0;
+	display:inline-block;
+	vertical-align:middle;
+}
+#header .menu li {
+	display:inline;
+}
+#header .menu li a {
+	display:inline-block;
+	text-decoration:none;
+	color:#999;
+	margin-left:40px;
+}
+#header .menu li a:hover, #header .menu li.current-menu-item a {
+	color:#BF1411;
+}
+
+
+
+
+
+.main {
+	line-height:140%;
+	background-color:#f8f8f8;
+	padding:10px;
+}
+
+.main .inner {
+	max-width:700px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.footer {
+	border-top:1px solid #ccc;
+	font-size:12px;
+	text-align:center;
+	padding:20px;
+}
+.footer_1, .footer_2, .footer_3 {
+	width:250px;
+	display:inline-block;
+	text-align:left;
+	vertical-align:top;
+}
+.footer p {
+	margin:0;
+	margin-bottom:10px;
+	line-height:130%;
+}
+.footer_3 {
+	width:200px;
+	text-align:right;
+}
+
+.mobile {
+	display:none;
+}
+
+.btn_iTzCzcyfkwpC {
+	display: block;
+	border: solid #860e0c 1px;
+	border-bottom: solid #600a09 1px;
+	cursor: pointer;
+	margin: 2px;
+	border-radius:2px;
+}
+.btn_iTzCzcyfkwpC a, .btn_iTzCzcyfkwpC input {
+	background: #BF1411;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cf4f4d', endColorstr='#BF1411');
+	background: -webkit-gradient(linear, left top, left bottom, from(#cf4f4d), to(#BF1411));
+	background: -moz-linear-gradient(top,  #cf4f4d,  #BF1411);
+	border: 0;
+	border-top: solid #e29594 1px;
+	text-align: center;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: block;
+	text-decoration: none;
+	font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+	font-weight: 700;
+	font-size:12px;
+	padding:6px 20px;
+	margin:0;
+}
+.btn_iTzCzcyfkwpC a:hover, .btn_iTzCzcyfkwpC input:hover {
+	background: #cf4f4d;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d56664', endColorstr='#BF1411');
+	background: -webkit-gradient(linear, left top, left bottom, from(#d56664), to(#BF1411));
+	background: -moz-linear-gradient(top,  #d56664,  #BF1411);
+	text-decoration:none;
+	color:#FFFFFF;
+}
+.btn_iTzCzcyfkwpC:active{
+	box-shadow: 0 0 0;
+}
+
+@media screen and (max-width: 650px) {
+	#header h1 {
+		display:block;
+		width:100%;
+		margin-bottom:10px;
+	}
+	#header .menu {
+		text-align:center;
+		display:block;
+	}
+	#header .menu li a {
+		margin:10px;
+	}
+	.footer_1, .footer_2, .footer_3 {
+		display:block;
+		width:100%;
+		padding-bottom:10px;
+	}
+	.footer_3 {
+		text-align:center;
+	}
+	.nomobile {
+		display:none;
+	}
+	.mobile {
+		display:block;
+	}
+}
+
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+.blog_preview {
+	border-left: 3px solid #ccc;
+	padding: 1px;
+	padding-left: 10px;
+	margin-bottom: 20px;
+}

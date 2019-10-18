@@ -1,0 +1,90 @@
+/*
+Theme Name: Find a Tortoise
+Description: Designed by Edmund Gentle for findatortoise.co.uk
+Author: Edmund Gentle
+Author URI: http://www.edmundgentle.com/
+Version: 1.0
+Tags: 
+*/
+@font-face{
+	font-family:'The Rifleman';
+	src:url('therifle.ttf');
+}
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #59AE28;
+	background-image: url(images/bg.gif);
+	background-repeat:repeat-y;
+}
+a {
+	color: #000000;
+}
+a:hover {
+	color: #2B6F00;
+}
+#head {
+	background-color:#2B6F00;
+	color:#FFFFFF;
+	text-align:center;
+	height:92px;
+	line-height:92px;
+	font-size:67px;
+	font-family:'The Rifleman', Arial, Helvetica, sans-serif;
+}
+#leftmenu {
+	background-color:#2B6F00;
+	width:188px;
+	padding-top:20px;
+	float:left;
+}
+#leftmenu ul {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+#leftmenu li {
+	display:block;
+	padding:0px;
+	margin:0px;
+	width:176px;
+	background-color:#FFFFFF;
+	height:33px;
+	line-height:33px;
+	text-align:center;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-left:5px;
+	margin-bottom:10px;
+	font-family:'The Rifleman', Arial, Helvetica, sans-serif;
+	font-size:21px;
+}
+#leftmenu a {
+	color:inherit;
+	text-decoration:none;
+}
+#leftmenu li.current-menu-item {
+	background-color:#59AE28;
+	width:183px;
+	border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-bottom-right-radius:0px;
+	-moz-border-radius-bottomright:0px;
+	padding-right:7px;
+}
+#main {
+	margin:10px;
+	margin-left:198px;
+}
+#main h1 {
+	font-family:'The Rifleman', Arial, Helvetica, sans-serif;
+	padding-left:30px;
+	font-size:32px;
+}

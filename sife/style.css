@@ -1,0 +1,185 @@
+/*
+Theme Name: SIFE Plymouth
+Description: Designed by Edmund Gentle
+Author: Edmund Gentle
+Author URI: http://www.edmundgentle.com/
+Version: 1.0
+Tags: 
+*/
+body, td, th {
+	font-family: Tahoma, Arial, sans-serif;
+}
+h1, h2, h3 {
+	font-family:Coda;
+	font-weight:800;
+	margin:20px;
+}
+h1 {
+	color:#093679;
+	font-size:22px;
+}
+h2 {
+	font-size:20px;
+}
+h3 {
+	font-size:18px;
+}
+p {
+	margin:10px 30px;
+	line-height:1.3em;
+}
+a {
+	color:#093679;
+}
+a:hover {
+	color:#f3901d;
+}
+body {
+	background-color:#DDD;
+	margin:0;
+	padding:0;
+	font-size:13px;
+}
+#container {
+	background-color:#F8F8F8;
+	width:690px;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+	box-shadow:0 0px 1px rgba(0,0,0,0.4);
+}
+.extra-wide {
+	width:701px;
+	margin-left:-5px;
+	margin-right:-6px;
+	box-shadow:0 2px 2px rgba(0,0,0,0.4);
+}
+.wide-left-wedge {
+	border:3px solid;
+	display:inline-block;
+	width:0px;
+	height:0px;
+	border-color: #333 #333 transparent transparent;
+	position:absolute;
+	left:-6px;
+}
+.wide-right-wedge {
+	border:3px solid;
+	display:inline-block;
+	width:0px;
+	height:0px;
+	border-color: #333 transparent transparent #333;
+	position:absolute;
+	right:-6px;
+}
+.wide-left-wedge.wedge-blue {
+	border-color: #072859 #072859 transparent transparent;
+}
+.wide-right-wedge.wedge-blue {
+	border-color: #072859 transparent transparent #072859;
+}
+.header {
+	height:44px;
+	background-color:#093679;
+}
+.main-menu {
+	text-align:right;
+	font-family:Coda;
+	font-weight:800;
+	list-style:none;
+	margin:0;
+	padding:0;
+	font-size:16px;
+}
+.main-menu li {
+	display:inline;
+}
+.main-menu a {
+	display:inline-block;
+	color:#FFF;
+	text-decoration:none;
+	margin:10px;
+	text-transform:lowercase;
+}
+.main-menu a:hover {
+	color:#f3901d;
+}
+#footer {
+	font-size:11px;
+	color:#666;
+	text-align:center;
+	padding:20px;
+}
+#footer a {
+	color:#666;
+}
+#footer a:hover {
+	color:#093679;
+}
+ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
+li.bjqs-slide{display:none;position:absolute;}
+
+ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
+
+ol.bjqs-markers{list-style:none;margin:0;padding:0;z-index:9999;}
+ol.bjqs-markers li{float:left;}
+
+p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+#logo {
+	position:absolute;
+	left:40px;
+	top:0;
+	background-image:url(sp.png);
+	width:143px;
+	height:92px;
+	background-repeat:no-repeat;
+}
+#logo h1 {
+	display:none;
+}
+.social-links {
+	list-style:none;
+	text-align:right;
+	margin-right:12px;
+}
+.social-links li {
+	display:inline;
+}
+.social-links a {
+	height:32px;
+	width:32px;
+	overflow:hidden;
+	display:inline-block;
+	margin:3px;
+	opacity:0.6;
+	text-indent:50px;
+	transition: opacity .2s ease-in-out;
+	-moz-transition: opacity .2s ease-in-out;
+	-webkit-transition: opacity .2s ease-in-out;
+}
+.social-links a:hover {
+	opacity:1;
+}
+.social-links .fb a {
+	background-image:url(facebook_32.png);
+}
+.social-links .tw a {
+	background-image:url(twitter_32.png);
+}
+.social-links .yt a {
+	background-image:url(youtube_32.png);
+}
+.alignright {
+	float:right;
+	margin-left:5px;
+}
+.alignleft {
+	float:left;
+	margin-right:5px;
+}
+.aligncenter {
+	text-align:center;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}

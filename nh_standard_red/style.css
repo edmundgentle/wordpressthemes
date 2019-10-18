@@ -1,0 +1,211 @@
+/*
+Theme Name: Standard Game Site - Red
+Description: NewHaze's standard "red" game site design. Perfect to get your NewHaze site up and running quickly and easily!
+Author: NewHaze
+Author URI: http://developers.newhaze.com/
+Version: 1.0
+Tags: red, grey, white, games, newhaze, search, two-column, sidebar, one-column
+
+Distributed via NewHaze ONLY.
+*/
+@font-face{font-family:'AltamonteNF';src:url('images/altamonte.ttf');}
+body {
+	background-image: url(images/bg.png);
+	margin: 0px;
+	text-align:center;
+}
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+#header {
+	background-image:url(images/header-bg.png);
+	height:151px;
+	width:100%;
+	color:#FFFFFF;
+	text-align:left;
+}
+#header h1 {
+	margin:0px;
+	padding:0px;
+	position:absolute;
+	top:35px;
+	left:32px;
+	font-size:32px;
+	font-family:AltamonteNF;
+	font-weight:normal;
+}
+#header h3 {
+	margin:0px;
+	padding:0px;
+	position:absolute;
+	top:70px;
+	left:178px;
+	font-size:17px;
+	font-family:AltamonteNF;
+	font-weight:normal;
+}
+#header form {
+	position:absolute;
+	top:30px;
+	right:100px;
+}
+#header form input {
+	display:inline;
+	font-size:14px;
+}
+#menu {
+	list-style:none;
+	background-color:#333333;
+	color:#FFFFFF;
+	margin:0px;
+	padding:5px;
+	font-size:16px;
+	padding-left:30px;
+	text-align:left;
+}
+#menu a {
+	color:#ffffff;
+	text-decoration:none;
+	padding:2px;
+	display:inline-block;
+}
+#menu a:hover {
+	background-color:#ffffff;
+	color:#000000;
+}
+#menu li {
+	display:inline;
+	padding:2px;
+}
+#main {
+	text-align:left;
+	width:980px;
+	margin:auto;
+	margin-top:30px;
+}
+#col-left {
+	width:660px;
+	float:left;
+}
+#col-right {
+	width:300px;
+	float:right;
+}
+#footer {
+	clear:both;
+	padding-top:10px;
+}
+#footer #footer-content {
+	background-color:#333333;
+	color:#FFFFFF;
+	margin-top:10px;
+	padding:3px;
+}
+#footer-content a {
+	color:#FFFFFF;
+}
+.content-box {
+	background-color:#FFFFFF;
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;
+	padding:0px;
+	margin:0px;
+	margin-bottom:20px;
+}
+.content-end {
+	clear:both;
+}
+.content-box p {
+	margin:0px;
+	padding:5px;
+}
+.content-box h2 {
+	background-image:url(images/glass-bg.png);
+	background-position:center;
+	margin:0px;
+	padding:7px;
+	padding-left:15px;
+	font-size:14px;
+	line-height:14px;
+	color:#FFFFFF;
+	font-weight:550;
+}
+.content-box h2 a {
+	color:#FFFFFF;
+	text-decoration:none;
+}
+a {
+	color: #a60808;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+	color: #000000;
+}
+label {
+	display:block;
+	font-weight:bold;
+}
+input, textarea {
+	display:block;
+	border:1px solid #666666;
+	background-color:#F6F6F6;
+	padding:3px;
+	font-size:13px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+textarea {
+	width:400px;
+	height:65px;
+}
+ul.games {
+	list-style:none;
+	width:100%;
+}
+ul.games li {
+	width:280px;
+	padding:8px;
+	float:left;
+}
+ul.games li img {
+	width:64px;
+	height:64px;
+	float:left;
+	margin-right:5px;
+	border:0px;!important
+}
+ul.games li strong {
+	font-size:13px;
+}
+ul#sidebar {
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+ul#sidebar li.widget {
+	display:block;
+	background-color:#FFFFFF;
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;
+	padding:0px;
+	margin:0px;
+	margin-bottom:20px;
+}
+ul#sidebar li p {
+	margin:0px;
+	padding:5px;
+}
+ul#sidebar li .widgettitle {
+	background-image:url(images/glass-bg.png);
+	background-position:center;
+	margin:0px;
+	padding:7px;
+	padding-left:15px;
+	font-size:14px;
+	line-height:14px;
+	color:#FFFFFF;
+	font-weight:550;
+}

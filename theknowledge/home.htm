@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>The Knowledge</title>
+		<style type="text/css">
+		* {
+			outline:0;
+			margin:0;
+			padding:0;
+		}
+		a {
+			color:inherit;
+			text-decoration:underline;
+		}
+		.px_666 {
+			background-image:url(images/pixel_666.gif);
+			min-height:12px;
+			height:1em;
+			width:12px;
+			background-position:center;
+			background-repeat:no-repeat;
+			content:" ";
+		}
+		body {
+			font-family:Georgia, "Times New Roman", Times, serif;
+		}
+		.container {
+			margin-left:auto;
+			margin-right:auto;
+			width:940px;
+		}
+		.header {
+			font-size:0;
+			text-align:center;
+			padding-top:80px;
+			padding-bottom:50px;
+		}
+		.header a {
+			display:inline-block;
+			width:714px;
+			height:163px;
+			background-image:url(images/logo_tagline.png);
+			background-repeat:no-repeat;
+			background-position:center;
+		}
+		.header a img {
+			display:none;
+		}
+		.main_menu {
+			display:block;
+			list-style:none;
+			font-size:0;
+			text-align:center;
+			margin-top:10px;
+			margin-bottom:30px;
+		}
+		.main_menu li {
+			display:inline;
+		}
+		.main_menu li a {
+			display:inline-block;
+			font-size:15px;
+			text-decoration:none;
+			color:#000000;
+			text-transform:uppercase;
+			padding-left:1px;
+			padding-right:1px;
+			margin-left:8px;
+			margin-right:8px;
+			border-bottom:2px solid transparent;
+		}
+		.main_2col {
+		}
+		.sidebar_right {
+			width:240px;
+			float:right;
+		}
+		.main_content {
+			width:690px;
+			display:inline-block;
+		}
+		.article h2 {
+			font-size:33px;
+			font-weight:normal;
+			color:#FF5335;
+			width:90%;
+			margin-bottom:35px;
+		}
+		.article_meta {
+			float:right;
+			overflow:hidden;
+			text-align:right;
+			font-size:14px;
+			clear:right;
+			margin-bottom:30px;
+		}
+		.article_meta .author_image {
+			width:87px;
+			height:87px;
+			overflow:hidden;
+			position:relative;
+			border-radius:6px;
+			margin-right:0;
+			margin-left:53px;
+		}
+		.article_meta .author_image img {
+			min-width:87px;
+			min-height:87px;
+		}
+		.article_meta .author_tagline {
+			font-style:italic;
+		}
+		.article_meta .pub_date {
+			border-top:2px solid #ddd;
+			margin-top:3px;
+			padding-top:3px;
+			color:#666666;
+		}
+		.article_meta .categories {
+			list-style:none;
+		}
+		.article_meta .categories li a {
+			text-decoration:none;
+			font-size:13px;
+			background-color:#333333;
+			color:#fff;
+			border-radius:4px;
+			padding:1px 3px;
+			margin-top:2px;
+			display:inline-block;
+		}
+		.article_meta .categories li a:hover {
+			opacity:0.8;
+			
+		}
+		.article_body {
+			width:505px;
+			font-size:14px;
+			line-height:150%;
+		}
+		.article_body a {
+			color:#FF5335;
+		}
+		.article_body a:hover {
+			color:#CC422A;
+		}
+		.article_body p {
+			margin-bottom:18px;
+		}
+		.article_body .quoteright {
+			float:right;
+			margin-left:15px;
+			clear:right;
+			margin-right:-185px;
+			margin-bottom:30px;
+			margin-top:5px;
+			max-width:230px;
+			overflow:hidden;
+			text-align:center;
+			color:#3A424D;
+			font-size:17px;
+		}
+		.article_body .quoteblock {
+			display:block;
+			margin-bottom:5px;
+			margin-top:5px;
+			margin-right:60px;
+			overflow:hidden;
+			text-align:center;
+			color:#3A424D;
+			font-size:25px;
+			line-height:110%;
+		}
+		.article_body .alignright {
+			float:right;
+			margin-left:15px;
+			clear:right;
+			margin-right:-185px;
+			margin-bottom:30px;
+			margin-top:5px;
+			max-width:230px;
+			overflow:hidden;
+			text-align:center;
+		}
+		.article_body .alignright img, .article_body .alignleft img {
+			max-width:100%;
+			display:block;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		.article_body .alignleft {
+			float:left;
+			margin-right:15px;
+			clear:left;
+			margin-bottom:30px;
+			margin-top:5px;
+			max-width:200px;
+			overflow:hidden;
+			text-align:center;
+		}
+		.article_body .aligncenter {
+			text-align:center;
+			display:block;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		.fb_comments {
+			clear:both;
+			margin-top:40px;
+		}
+		
+		
+		
+		.mob_menu {
+			display:none;
+		}
+		
+		.search_box {
+			border:1px solid #CCCCCC;
+			background-color:#FFFFFF;
+			font-size:0;
+		}
+		.search_box input {
+			border:0;
+			background-color:#fff;
+			height:30px;
+			display:inline-block;
+			vertical-align:middle;
+		}
+		.search_box input[type=text] {
+			padding-left:10px;
+			font-family:Georgia, "Times New Roman", Times, serif;
+			font-size:15px;
+			width:196px;
+		}
+		.search_box input[type=submit] {
+			background-image:url(images/search_icon.gif);
+			background-repeat:no-repeat;
+			font-size:0;
+			width:32px;
+			background-position:center;
+			float:right;
+			cursor:pointer;
+		}
+		.sidebar_widgets {
+			list-style:none;
+			font-size:0;
+		}
+		.sidebar_widgets li {
+			margin-top:20px;
+			font-size:14px;
+		}
+		.sidebar_widgets li h2 {
+			font-size:16px;
+		}
+		/*Reset list styles*/
+		.sidebar_widgets li ul, .article_body ul, .article_body ol {
+			padding:0;
+			padding-left:22px;
+			margin:3px;
+			margin-bottom:10px;
+		}
+		.sidebar_widgets li ul, .article_body ul {
+			list-style:square;
+		}
+		.sidebar_widgets li ul li, .article_body ul li, .article_body ol li {
+			margin:1px;
+			padding:0;
+		}
+		/*End style reset*/
+		.sidebar_widgets .article_list {
+			list-style:none;
+			padding:0;
+			margin:0px;
+		}
+		.sidebar_widgets .article_list li a {
+			border-left:2px solid #eee;
+			display:block;
+			padding:2px;
+			padding-left:5px;
+			text-decoration:none;
+		}
+		.sidebar_widgets .article_list .title {
+			display:block;
+			font-size:16px;
+		}
+		.sidebar_widgets .article_list .info {
+			font-size:12px;
+			color:#666;
+		}
+		.sidebar_widgets .article_list .category {
+			background-color:#333333;
+			color:#FFFFFF;
+			display:inline-block;
+			padding:1px 3px;
+			border-radius:4px;
+			margin-right:5px;
+		}
+		.footer {
+			clear:both;
+			font-size:0;
+			margin-top:15px;
+			margin-bottom:20px;
+			border-top:5px solid #ededed;
+			padding-top:10px;
+		}
+		.footer p {
+			font-size:13px;
+			display:inline-block;
+			margin-right:10px;
+		}
+		.footer ul.menu {
+			list-style:none;
+			display:inline;
+		}
+		.footer ul.menu li {
+			display:inline;
+		}
+		.footer ul.menu li a {
+			display:inline-block;
+			margin-left:5px;
+			margin-right:10px;
+			font-size:13px;
+		}
+		
+		
+		/*Home page*/
+		
+		.home .cols {
+			font-size:0;
+		}
+		
+		.home .cols .col {
+			width:50%;
+			display:inline-block;
+			vertical-align:top;
+		}
+		.home .cols .col .col_inner {
+			padding:10px;
+		}
+		.home .cols .col:first-child .col_inner {
+			padding-left:0;
+		}
+		.home .cols .col:last-child .col_inner {
+			padding-right:0px;
+		}
+		.home .col .section {
+			border-bottom:3px solid #eee;
+			margin-bottom:10px;
+		}
+		.home .col .section a {
+			text-decoration:none;
+		}
+		.home .col .section h2 {
+			background-color:#333;
+			color:#fff;
+			padding:3px 6px;
+			font-size:16px;
+			font-weight:normal;
+			text-align:center;
+			margin-bottom:2px;
+			text-transform:uppercase;
+		}
+		.home .col .section a:hover h2 {
+			opacity:0.8;
+		}
+		.home .section .articles {
+			list-style:none;
+		}
+		.home .section .articles li {
+			
+		}
+		.home .section .articles li a {
+			text-decoration:none;
+		}
+		.home .section .articles li:hover {
+			background-color:#eee;
+		}
+		.home .section .articles .image {
+			display:none;
+		}
+		.home .section .articles li {
+			width:50%;
+			display:inline-block;
+			font-size:14px;
+			vertical-align:top;
+		}
+		.home .section .articles li:first-child {
+			width:100%;
+		}
+		.home .section .articles li:first-child .image {
+			width:100%;
+			height:120px;
+			overflow:hidden;
+			display:block;
+		}
+		.home .section .articles .image img {
+			min-width:100%;
+			min-height:120px;
+		}
+		.home .section .articles .title {
+			font-weight:bold;
+			margin-top:2px;
+			margin-bottom:2px;
+		}
+		.home .section .articles .summary {
+			font-style:italic;
+			margin-left:3px;
+			margin-right:3px;
+			margin-bottom:5px;
+			font-size:12px;
+		}
+		.home .section .articles li:first-child .summary {
+			font-size:14px;
+		}
+		.slider {
+			list-style:none;
+			width:100%;
+			height:285px;
+			overflow:hidden;
+		}
+		.slider li {
+			width:100%;
+			height:285px;
+			overflow:hidden;
+			position:relative;
+		}
+		.slider li .image {
+			width:100%;
+			height:285px;
+			overflow:hidden;
+			z-index:999;
+			position:absolute;
+			top:0;
+			left:0;
+		}
+		.slider li .image img {
+			min-width:100%;
+			min-height:285px;
+		}
+		.slider li a:hover .overlay {
+			background:rgba(255,255,255,0.7);
+		}
+		.slider li .overlay {
+			background:rgba(255,255,255,0.5);
+			padding:10px;
+			bottom:0;
+			left:0;
+			right:0;
+			position:absolute;
+			z-index:9999;
+			border-top:3px solid #333;
+		}
+		.slider li .title {
+			font-size:18px;
+			margin-bottom:5px;
+		}
+		.slider li .summary {
+			font-size:14px;
+		}
+		ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
+		li.bjqs-slide{display:none;position:absolute;}
+		ul.bjqs-controls li a{
+			display:block;
+			padding:5px 10px;
+			position:absolute;
+			background:rgba(255,255,255,0.6);
+			color:#069;
+			text-decoration:none;
+			text-transform:uppercase;
+			bottom:0;
+		}
+		
+		.just_articles {
+			list-style:none;
+		}
+		.just_articles a {
+			min-height:140px;
+			padding-left:210px;
+			display:block;
+			margin-bottom:10px;
+			text-decoration:none;
+		}
+		.just_articles a:hover {
+			background-color:#eee;
+		}
+		.just_articles .image {
+			width:200px;
+			height:140px;
+			overflow:hidden;
+			float:left;
+			margin-left:-210px;
+		}
+		.just_articles .image img {
+			min-width:100%;
+			min-height:140px;
+		}
+		.just_articles .title {
+			font-size:18px;
+			margin-bottom:10px;
+			padding-top:5px;
+			font-weight:bold;
+		}
+		
+		
+		/*Custom colours*/
+		.sidebar_widgets .article_list .category_news a:hover, .main_menu .category_news a:hover, .slider li.category_news .overlay {
+			border-color:#EF3453;
+		}
+		.sidebar_widgets .article_list .category_features a:hover, .main_menu .category_features a:hover, .slider li.category_features .overlay {
+			border-color:#9BCDE6;
+		}
+		.sidebar_widgets .article_list .category_comment a:hover, .main_menu .category_comment a:hover, .slider li.category_comment .overlay {
+			border-color:#189AD6;
+		}
+		.sidebar_widgets .article_list .category_lifestyle a:hover, .main_menu .category_lifestyle a:hover, .slider li.category_lifestyle .overlay {
+			border-color:#66C078;
+		}
+		.sidebar_widgets .article_list .category_styleandbeauty a:hover, .main_menu .category_styleandbeauty a:hover, .slider li.category_styleandbeauty .overlay {
+			border-color:#949599;
+		}
+		.sidebar_widgets .article_list .category_arts a:hover, .main_menu .category_arts a:hover, .slider li.category_arts .overlay {
+			border-color:#1D394E;
+		}
+		.sidebar_widgets .article_list .category_societies a:hover, .main_menu .category_societies a:hover, .slider li.category_societies .overlay {
+			border-color:#52C2B6;
+		}
+		
+		.sidebar_widgets .article_list .category_news .category, .article_meta .categories li.category_news a, .home .col .section.category_news h2 {
+			background-color:#EF3453;
+		}
+		.sidebar_widgets .article_list .category_features .category, .article_meta .categories li.category_features a, .home .col .section.category_features h2 {
+			background-color:#9BCDE6;
+		}
+		.sidebar_widgets .article_list .category_comment .category, .article_meta .categories li.category_comment a, .home .col .section.category_comment h2 {
+			background-color:#189AD6;
+		}
+		.sidebar_widgets .article_list .category_lifestyle .category, .article_meta .categories li.category_lifestyle a, .home .col .section.category_lifestyle h2 {
+			background-color:#66C078;
+		}
+		.sidebar_widgets .article_list .category_styleandbeauty .category, .article_meta .categories li.category_styleandbeauty a, .home .col .section.category_styleandbeauty h2 {
+			background-color:#949599;
+		}
+		.sidebar_widgets .article_list .category_arts .category, .article_meta .categories li.category_arts a, .home .col .section.category_arts h2 {
+			background-color:#1D394E;
+		}
+		.sidebar_widgets .article_list .category_societies .category, .article_meta .categories li.category_societies a, .home .col .section.category_societies h2 {
+			background-color:#52C2B6;
+		}
+		
+		
+		
+		
+		@media screen and (max-width: 940px) {
+			.container {
+				width:100%;
+			}
+			.header {
+				text-align:center;
+				padding-top:20px;
+				padding-bottom:10px;
+			}
+			.header a {
+				display:inline-block;
+				width:80%;
+				max-width:714px;
+				height:1px;
+				background:none;
+			}
+			.header a img {
+				display:inline-block;
+				width:100%;
+			}
+			.main_menu {
+				margin-bottom:5px;
+			}
+			.main_menu li a {
+				display:block;
+				text-transform:none;
+				padding:5px 10px;
+				color:#FFFFFF;
+			}
+			.sidebar_right {
+				display:none;
+			}
+			.main_content {
+				width:100%;
+			}
+			.article h2 {
+				width:95%;
+				margin-bottom:20px;
+				margin-left:auto;
+				margin-right:auto;
+				text-align:center;
+			}
+			.article_meta {
+				float:none;
+				min-height:87px;
+				text-align:left;
+				padding-left:90px;
+				margin-right:3px;
+				margin-left:3px;
+			}
+			.article_meta .author_image {
+				float:left;
+				margin-left:-90px;
+			}
+			.article_meta .categories li {
+				display:inline;
+			}
+			.article_meta .categories li a {
+				padding:5px 8px;
+				margin-top:8px;
+				margin-right:10px;
+			}
+			.article_body {
+				width:95%;
+				font-size:16px;
+				line-height:150%;
+				margin-left:auto;
+				margin-right:auto;
+			}
+			.article_body .alignright {
+				display:block;
+				float:none;
+				max-width:100%;
+				width:100%;
+				margin-left:0;
+				margin-right:0;
+				clear:none;
+				background-color:#eee;
+				padding-top:0px;
+				padding-bottom:5px;
+				border-top:3px solid #FF5335;
+				border-bottom:2px solid #FF5335;
+			}
+			.article_body .quoteright {
+				display:block;
+				float:none;
+				max-width:100%;
+				width:100%;
+				margin-left:0;
+				margin-right:0;
+				clear:none;
+				background-color:#eee;
+				padding-top:5px;
+				padding-bottom:5px;
+			}
+			.article_body .quoteblock {
+				margin-right:5px;
+				margin-left:5px;
+			}
+			.article_body .alignleft {
+				float:none;
+				margin-right:0;
+				clear:none;
+				margin-bottom:5px;
+				margin-top:5px;
+				max-width:100%;
+				overflow:hidden;
+				text-align:center;
+				background-color:#eee;
+				padding-top:0px;
+				padding-bottom:5px;
+				border-top:3px solid #FF5335;
+				border-bottom:2px solid #FF5335;
+			}
+			
+			.footer {
+				padding-left:10px;
+				padding-right:10px;
+			}
+			.mob_menu {
+				display:block;
+				font-size:0;
+				margin-left:10px;
+				margin-right:10px;
+			}
+			.mob_menu a {
+				display:block;
+				font-size:15px;
+				text-align:center;
+				text-decoration:none;
+				background-color:#eee;
+				border-radius:3px;
+				padding:5px 0;
+			}
+			.main_menu {
+				display:none;
+			}
+			.home {
+				padding-top:10px;
+			}
+			.home .cols .col {
+				width:100%;
+			}
+			.home .cols .col:first-child .col_inner, .home .cols .col:last-child .col_inner {
+				padding:10px;
+			}
+			
+			
+			
+			.main_menu .category_news a {
+				background-color:#EF3453;
+			}
+			.main_menu .category_features a {
+				background-color:#9BCDE6;
+			}
+			.main_menu .category_comment a {
+				background-color:#189AD6;
+			}
+			.main_menu .category_lifestyle a {
+				background-color:#66C078;
+			}
+			.main_menu .category_styleandbeauty a {
+				background-color:#949599;
+			}
+			.main_menu .category_arts a {
+				background-color:#1D394E;
+			}
+			.main_menu .category_societies a {
+				background-color:#52C2B6;
+			}
+			.just_articles a {
+				min-height:100px;
+				padding:10px;
+				padding-left:140px;
+				margin-bottom:0;
+			}
+			.just_articles .image {
+				width:120px;
+				height:100px;
+				margin-left:-130px;
+			}
+			.just_articles .image img {
+				min-height:100px;
+			}
+			.just_articles .title {
+				font-size:16px;
+				margin-bottom:5px;
+				padding-top:0px;
+				font-weight:bold;
+			}
+		}
+		</style>
+		<script src="jquery.js" type="text/javascript"></script>
+		<script src="basic-jquery-slider.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		$(function() {
+			$('#mob_cat_link').click(function(e) {
+				e.preventDefault();
+				$('.main_menu').slideToggle('medium');
+			});
+			$('#homepage_slider').bjqs({
+				'animation' : 'slide',
+			    'height' : 285,
+				'width' :$('#homepage_slider').width(),
+				'showMarkers' : false,
+				'showControls' : false,
+				'centerControls': false
+			});
+		});
+		</script>
+</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1><a href="">The Knowledge <img src="images/logo_big.png" /></a></h1>
+			</div>
+			<div class="mob_menu">
+				<a href="javascript:;" id="mob_cat_link">Categories</a>
+			</div>
+			<ul class="main_menu">
+				<li class="category_news"><a href="">News</a></li>
+				<li class="category_features"><a href="">Features</a></li>
+				<li class="category_comment"><a href="">Comment</a></li>
+				<li class="category_lifestyle"><a href="">Lifestyle</a></li>
+				<li class="category_styleandbeauty"><a href="">Style &amp; Beauty</a></li>
+				<li class="category_arts"><a href="">Arts &amp; Entertainment</a></li>
+				<li class="category_societies"><a href="">Sports &amp; Societies</a></li>
+			</ul>
+			<div class="main_2col">
+				<div class="sidebar_right">
+					<form class="search_form">
+						<div class="search_box">
+							<input type="submit" value="Search" />
+							<input type="text" placeholder="Search..." />
+						</div>
+					</form>
+					<ul class="sidebar_widgets">
+						<li>
+							<h2>Recent Articles</h2>
+							<ul class="article_list">
+								<li class="category_styleandbeauty">
+									<a href="">
+										<span class="title">How To: Hair Chalk Your Hair</span>
+										<span class="info"><span class="category">Style &amp; Beauty</span> 12th October</span>
+									</a>
+								</li>
+								<li class="category_news">
+									<a href="">
+										<span class="title">How To: Hair Chalk Your Hair</span>
+										<span class="info"><span class="category">News</span> 12th October</span>
+									</a>
+								</li>
+								<li class="category_arts">
+									<a href="">
+										<span class="title">How To: Hair Chalk Your Hair</span>
+										<span class="info"><span class="category">Arts &amp; Entertainment</span> 12th October</span>
+									</a>
+								</li>
+								<li class="category_societies">
+									<a href="">
+										<span class="title">How To: Hair Chalk Your Hair</span>
+										<span class="info"><span class="category">Sports &amp; Societies</span> 12th October</span>
+									</a>
+								</li>
+								<li class="category_styleandbeauty">
+									<a href="">
+										<span class="title">How To: Hair Chalk Your Hair</span>
+										<span class="info"><span class="category">Style &amp; Beauty</span> 12th October</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<div style="background-color:#999999;line-height:262px;text-align:center;">Facebook widget</div>
+						</li>
+						<li>
+							<div style="background-color:#999999;line-height:350px;text-align:center;">Twitter widget</div>
+						</li>
+					</ul>
+				</div>
+				<div class="main_content home">
+					<div id="homepage_slider">
+						<ul class="slider bjqs">
+							<li class="category_news">
+								<a href="">
+									<div class="image"><img src="image.png" /></div>
+									<div class="overlay">
+										<div class="title">How To: Hair Chalk Your Hair</div>
+										<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+									</div>
+								</a>
+							</li>
+							<li class="category_lifestyle">
+								<a href="">
+									<div class="image"><img src="image.png" /></div>
+									<div class="overlay">
+										<div class="title">How To: Hair Chalk Your Hair</div>
+										<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+									</div>
+								</a>
+							</li>
+							<li class="category_comment">
+								<a href="">
+									<div class="image"><img src="image.png" /></div>
+									<div class="overlay">
+										<div class="title">How To: Hair Chalk Your Hair</div>
+										<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="cols">
+						<div class="col">
+							<div class="col_inner">
+								<div class="section category_news">
+									<a href=""><h2>News</h2></a>
+									<ul class="articles">
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="section category_lifestyle">
+									<a href=""><h2>Lifestyle</h2></a>
+									<ul class="articles">
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="section category_arts">
+									<a href=""><h2>Arts &amp; Entertainment</h2></a>
+									<ul class="articles">
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night... And there's more text to this particular article for some unusual reason. Fancy that eh!</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="col_inner">
+								<div class="section category_comment">
+									<a href=""><h2>Comment</h2></a>
+									<ul class="articles">
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="section category_styleandbeauty">
+									<a href=""><h2>Style &amp; Beauty</h2></a>
+									<ul class="articles">
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="section category_societies">
+									<a href=""><h2>Sports &amp; Societies</h2></a>
+									<ul class="articles">
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="image"><img src="image.png" /></div>
+												<div class="title">How To: Hair Chalk Your Hair</div>
+												<div class="summary">You're snuggled in your bed, all warm and cosy. Not a care in the world! You're a Fresher and you just had the most incredible night...</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<p>&copy; <strong>The Knowledge</strong> 2013</p>
+				<ul class="menu">
+					<li><a href="">Login</a></li>
+					<li><a href="">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
